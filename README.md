@@ -3,7 +3,7 @@ Projeto extensionista realizado na disciplina de Laboratório de Engenharia Quí
 # Python na Engenharia Química
 Aprender Python é indispensável para engenheiros químicos porque permite modelar, simular e otimizar processos com muito mais rapidez, precisão e autonomia.
 
-A linguagem oferece bibliotecas robustas para cálculos numéricos, análise de dados, regressão, simulação de fenômenos de transporte, projeto de equipamentos, métodos iterativos e integração de balanços de massa e energia, além de ferramentas para machine learning aplicadas ao desenvolvimento de soft sensors e controle avançado de processos.
+A linguagem oferece bibliotecas robustas para cálculos numéricos, análise de dados e simulação, podendo ser utilizada para resolver problemas de fenômenos de transporte, projeto de equipamentos, métodos iterativos e integração de balanços de massa e energia, além de ferramentas para machine learning aplicadas ao desenvolvimento de soft sensors e controle avançado de processos.
 
 Dominar Python possibilita substituir cálculos manuais repetitivos por rotinas confiáveis, automatizar análises laboratoriais, interpretar grandes volumes de dados industriais, validar modelos termodinâmicos e cinéticos e criar interfaces e ferramentas próprias para tomada de decisão. Em um cenário onde a indústria 4.0 exige engenheiros capazes de integrar conhecimento técnico a habilidades computacionais, Python se torna uma competência central e diferencial na prática profissional da engenharia química.
 
