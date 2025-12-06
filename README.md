@@ -23,4 +23,4 @@ plantas industriais (INCROPERA, 2019).
 
 Com isso, realizou-se a modelagem de um trocador de calor bitubular, implementada em Python. O código calcula a eficiência térmica do trocador nos arranjos paralelo e contracorrente e estima as temperaturas de saída das correntes quente e fria com base nos balanços de energia e na correlação efetividade–NTU correspondente ao tipo de escoamento. O programa também permite interpolar propriedades da água quando necessário, automatizando as etapas de cálculo e fornecendo previsões consistentes para diferentes condições operacionais.
 
-![TC Bitubular](https://imgur.com/a/FGiDgAp)
+![TC Bitubular](https://i.imgur.com/QIK0RLr.jpeg)
