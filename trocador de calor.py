@@ -1,5 +1,7 @@
 import math
 
+# Código feito por Thiago Ogata, estudante de engenharia química da Universidade Federal de São Paulo.
+
 pi = 3.141592653589793
 e = 2.71828
 
