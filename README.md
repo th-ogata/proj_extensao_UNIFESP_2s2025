@@ -1,3 +1,3 @@
-Projeto extensionista referente a disciplina de Laboratório de Engenharia Química pela UNIFESP no ano de 2025.
+Projeto extensionista realizado na disciplina de Laboratório de Engenharia Química da UNIFESP (2025).
 
-O código em Python tem como finalidade calcular a eficiência de um trocador de calor bitubular para os arranjos em paralelo e contra-corrente e estimar as temperaturas de saída das correntes quente e fria, utilizando as equações de balanço de energia e a correlação de efetividade–NTU apropriada ao arranjo especificado, como também interpolar os valores das propriedades da água caso solicitado.
+Desenvolveu-se a modelagem de um trocador de calor bitubular, implementada em Python. O código calcula a eficiência térmica do trocador nos arranjos paralelo e contracorrente e estima as temperaturas de saída das correntes quente e fria com base nos balanços de energia e na correlação efetividade–NTU correspondente ao tipo de escoamento. O programa também permite interpolar propriedades da água quando necessário, automatizando as etapas de cálculo e fornecendo previsões consistentes para diferentes condições operacionais.
