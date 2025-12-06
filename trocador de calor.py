@@ -11,7 +11,7 @@ Dh = De - Di    #Diametro hidraulico
 
 L = float(input("Comprimento do TC (m): "))
 
-Km = float(input("Coeficiente condutivo do tubo interno (W/m): "))
+#Km = float(input("Coeficiente condutivo do tubo interno (W/m): "))
 
 # Áreas transversais e superficial
 Atr_e = pi * (Dh**2)/4
