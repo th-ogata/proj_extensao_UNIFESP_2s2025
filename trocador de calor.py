@@ -48,7 +48,7 @@ def interpolar(x, X, Y):
 
 print("\nSelecione uma opção:")
 print("1 - Interpolar propriedades água (0 a 100 °C)")
-print("2 - Inserir propriedades manualmente\n")
+print("2 - Inserir propriedades manualmente")
 op = input("Opção: ")
 
 # Escolha do método de inserção das propriedades, interpolação para água ou inserção manual para outros fluidos
