@@ -1,5 +1,3 @@
-Projeto extensionista realizado na disciplina de Laboratório de Engenharia Química da UNIFESP (2025).
-
 # Python na Engenharia Química
 Aprender Python é indispensável para engenheiros químicos porque permite modelar, simular e otimizar processos com muito mais rapidez, precisão e autonomia.
 
