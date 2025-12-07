@@ -1,5 +1,5 @@
 # Python na Engenharia Química
-Aprender programação em Python é uma ferramente indispensável para engenheiros químicos pois permite modelar, simular e otimizar processos com muito mais rapidez, precisão e autonomia.
+A programação em Python é uma ferramenta indispensável para engenheiros químicos pois permite modelar, simular e otimizar processos com muito mais rapidez, precisão e autonomia.
 
 A linguagem oferece bibliotecas robustas para cálculos numéricos, análise de dados e simulação, podendo ser utilizadas para resolução de problemas de fenômenos
 de transporte, projeto de equipamentos, métodos iterativos e integração de balanços de massa e energia, além de ferramentas para machine learning aplicadas
