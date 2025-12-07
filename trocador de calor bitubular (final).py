@@ -26,12 +26,6 @@ L = float(input("Comprimento do TC (m): "))
 #Km = float(input("Coeficiente condutivo do tubo interno (W/m): "))
 Qf = float(input("Vazão da corrente fria (m3/s): "))
 
-# Cálculo das dimensções do TC
-Dh = De - Di    #Diametro hidraulico
-Atr_e = pi * (Dh**2)/4
-Atr_i = pi * (Di**2)/4
-Asi = pi * Di * L
-
 # Prompt para inserção das temperaturas de entrada e saídas das correntes fria e quente
 print("\nInsira as temperaturas das correntes...")
 Tfe = float(input("Temp. de entrada da corrente fria (°C): "))
@@ -54,7 +48,6 @@ print("2 - Inserir propriedades manualmente")
 op = input("Opção: ")
 
 if op == "1":
-    print("\nInterpolar propriedades da água (0 a 100 °C)")
     Temp = [0, 20, 40, 60, 80, 100]
     rho = [999, 998, 992, 983, 972, 958]
     cp = [4.22e3, 4.18e3, 4.18e3, 4.19e3, 4.20e3, 4.22e3]
@@ -73,18 +66,17 @@ if op == "1":
     k_f   = interpolar(Tf_med, Temp, k)
     cp_f  = interpolar(Tf_med, Temp, cp)
 
-    print("Propriedades interpoladas para o fluido Frio em Tf, med = {:} °C".format(Tf_med))
-    print
-    print(f"rho,f  = {rho_f:} kg/m3")
-    print(f"mi,f   = {mi_f:} Pa·s")
-    print(f"k,f    = {k_f:} W/m·K")
-    print(f"cp,f   = {cp_f:} J/kg·K")
+    # Plotar tabela com as propriedades para ambos os fluidos
+    nomes = ["rho", "mu", "k", "cp"]
+    prop_q = [rho_q, mi_q, k_q, cp_q]
+    prop_f = [rho_f, mi_f, k_f, cp_f]
+    unid = ["kg/m3", "Pa.s", "W/m.K", "J/kg.K"]
 
-    print("\nPropriedades interpoladas para o fluido Quente em Tq, med = {:} °C".format(Tq_med))
-    print(f"rho,q  = {rho_q:} kg/m3")
-    print(f"mi,q   = {mi_q:} Pa·s")
-    print(f"k,q    = {k_q:} W/m·K")
-    print(f"cp,q   = {cp_q:} J/kg·K")
+    print("\nPropriedades da água interpoladas para as temperaturas:")
+    print(f"{'':12s}{Tq_med:10.3g} °C   {Tf_med:4.3g} °C")
+    print(f"{'Propriedade':14s}{'Quente':>10s}{'Fria':>10s}")
+    for nome, vq, vf, un in zip(nomes, prop_q, prop_f, unid):
+        print(f"{nome:10s}  {vq:10.4g}  {vf:10.4g}  {un:}")
 
 elif op == "2":
     print("\nInserir propriedades manualmente...")
@@ -100,6 +92,12 @@ elif op == "2":
 
 else:
     print("Opção inválida.")
+
+# Cálculo das dimensções do TC
+Dh = De - Di    #Diametro hidraulico
+Atr_e = pi * (Dh**2)/4
+Atr_i = pi * (Di**2)/4
+Asi = pi * Di * L
 
 #Número de Prandt
 Pr_f = (cp_f * mi_f)/k_f 
