@@ -33,7 +33,7 @@ para diferentes condições operacionais.
 
 # Resultados
 O caso de estudo adotado para verificar a consistência do código foi o Experimento 4 da UC, permitindo comparar os resultados obtidos em Python com aqueles registrados na planilha Excel.
-As diferenças observadas foram pequenas e podem ser atribuídas à precisão limitada dos dados de propriedades da água, declaradas apenas em intervalos de 20 °C, desconsiderando sua variação não linear com a temperatura,
+As diferenças observadas foram pequenas e podem ser atribuídas à precisão limitada dos dados de propriedades da água, declaradas em intervalos de 20 °C, retornando as propriedades com uma pequena imprecisão devido a sua variação não linear com a temperatura,
 a utilização da correlação de Reynolds simplicada, que causa grandes erros, além de possíveis inconsistências na definição das variáveis durante o cálculo.
 Apesar dessas limitações, o código apresentou desempenho adequado, reproduzindo valores muito próximos dos experimentais e confirmando sua confiabilidade para aplicações didáticas e de modelagem térmica, como também,
 a possibilidade de otimização para a implantação para prever a eficiencia esperada em uma linha de processos.
