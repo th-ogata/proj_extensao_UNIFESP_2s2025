@@ -2,7 +2,7 @@
 # Código feito por Thiago Ogata, estudante de engenharia química da Universidade Federal de São Paulo #
 #######################################################################################################
 
-# Bibliotecas e definição de variáveis
+# Bibliotecas e definição de constantes
 import math
 
 pi = 3.141592653589793
@@ -113,31 +113,31 @@ mq = (mf * cp_f * (Tfs - Tfe))/(cp_q * (Tqe - Tqs))
 Vf = (mf/rho_f)/Atr_e
 Vq = (mq/rho_q)/Atr_i
 
-# Número de Renatos
+# Adiensionais, Número de Reynolds e Nusselt
 Re_f = (rho_f * Vf * Dh)/mi_f
 Re_q = (rho_q * Vq * Di)/mi_q
 
-# Número de Nusselt
 Nu_f = 1.86 * ((Re_f * Pr_f * (Dh/L))**(1/3)) * ((mi_f/mi_f)**0.14)
 Nu_q =1.86 * ((Re_q * Pr_q * (Di/L))**(1/3)) * ((mi_q/mi_q)**0.14)
 
-# Coef. Convectivo
+# Coef. Convectivo e Taxas de TC
 h_e = (Nu_f * k_f)/Dh
 h_i = (Nu_q * k_q)/Di
+
+q_e = mf * cp_f * (Tfs - Tfe)
+q_i = mq * cp_q * (Tqs - Tqe)
 
 print("\nCoef. de TC por Convecção")
 print(f"h_e = {h_e:.3g} W/m2.K   e   h_i = {h_i:.3g} W/m2.K\n")
 
-# Taxas de TC
-q_e = mf * cp_f * (Tfs - Tfe)
-q_i = mq * cp_q * (Tqs - Tqe)
-
 print("Taxa de TC")
-print(f"q_e = {q_e:} W  e  q_i = {q_i:} W\n")
+print(f"q_e = {q_e:} W  e  q_i = {q_i:} W")
 
 # Resistências globais
 U_exp = q_e/(Asi * DelTML)
 U_teo = 1/((1/h_e)+(1/h_i))
+
+print(f"U_exp = {U_exp:} W/m2.K  e  U_teo = {U_teo:} W/m2.K")
 
 ER = (abs(U_exp - U_teo)/U_exp) * 100
 print(f"ER = {ER:} %")
@@ -159,7 +159,7 @@ if op3 == "1":
     else:
         Cmin = Cf
 
-    #NUT
+    #Calculo da efetividade-NUT
     NUT = Asi * U_exp/Cmin 
 
     print("\nSelecione uma opção:")
@@ -170,7 +170,6 @@ if op3 == "1":
         #Paralelo
         print("\nParalelo:")
         epi = ((1 - e**(-NUT * (1 + CC)))/(1 + CC)) #Efetividade em f(NUT)
-
 
     elif "2":
         #Contra-corrente
@@ -200,7 +199,7 @@ ER_Tqs = abs((Tqs - efi_Tqs)/Tqs) * 100
 epiperc = epi * 100
 print(f"Efetividade  = {epiperc:.2f}%\n")
 
-print(f"q = {q_efi:.2f} W")
+print(f"q_efi = {q_efi:.2f} W")
 
 print(f"Tfs = {efi_Tfs:.2f} °C, Tqs = {efi_Tqs:.2f} °C pelo método da efetividade")
 print(f"ER, Tfs  = {ER_Tfs:.5f}%")
