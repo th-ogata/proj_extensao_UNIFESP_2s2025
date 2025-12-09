@@ -1,7 +1,3 @@
-#######################################################################################################
-# Código feito por Thiago Ogata, estudante de engenharia química da Universidade Federal de São Paulo #
-#######################################################################################################
-
 # Bibliotecas e definição de constantes
 import math
 
@@ -202,5 +198,6 @@ print(f"q_efi = {q_efi:.2f} W")
 print(f"Tfs = {efi_Tfs:.2f} °C, Tqs = {efi_Tqs:.2f} °C pelo método da efetividade")
 print(f"ER, Tfs  = {ER_Tfs:.5f}%")
 print(f"ER, Tqs  = {ER_Tqs:.5f}%")
+
 
 input("Pressione Enter para sair...")
