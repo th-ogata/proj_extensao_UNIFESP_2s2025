@@ -199,5 +199,6 @@ print(f"Tfs = {efi_Tfs:.2f} °C, Tqs = {efi_Tqs:.2f} °C pelo método da efetivi
 print(f"ER, Tfs  = {ER_Tfs:.5f}%")
 print(f"ER, Tqs  = {ER_Tqs:.5f}%")
 
-
 input("Pressione Enter para sair...")
+
+# Código feito por Thiago Ogata, estudante de engenharia química da Universidade Federal de São Paulo.
