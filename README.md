@@ -40,4 +40,4 @@ a possibilidade de otimização para a implantação para prever a eficiencia es
 
 Como sugestão de melhoria para o projeto, recomenda-se ampliar a base de dados das propriedades da água, preferencialmente por meio da implementação de um banco de dados utilizando a biblioteca pandas, permitindo interpolação mais precisa. Além disso, pode-se incorporar outros tipos de geometrias de trocadores de calor, como casco e tubo, tornando o código mais completo e aplicável a diferentes configurações industriais.
 
-<img src="https://i.imgur.com/AQxl0YX.jpeg">
+<img src="https://i.imgur.com/Fow81s1.jpeg">
