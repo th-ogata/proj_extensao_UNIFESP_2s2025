@@ -24,7 +24,7 @@ as taxas de reação, no ajuste das propriedades físicas de substâncias para g
 segurança e eficiência, ou ainda na recuperação de calor proveniente de vapor residual de
 plantas industriais (INCROPERA, 2019).
 
-<img src="https://i.imgur.com/QIK0RLr.jpeg" width="500">
+<img src="https://raw.githubusercontent.com/th-ogata/proj_extensao_UNIFESP_2s2025/refs/heads/main/imagens/diagrama.jpg" width="500">
 
 Com isso, realizou-se a modelagem de um trocador de calor bitubular, implementada em Python. O código calcula a eficiência térmica do trocador nos arranjos paralelo
 e contracorrente e estima as temperaturas de saída das correntes quente e fria com base nos balanços de energia e na correlação efetividade–NTU correspondente ao tipo
@@ -40,4 +40,4 @@ a possibilidade de otimização para a implantação para prever a eficiencia es
 
 Como sugestão de melhoria para o projeto, recomenda-se ampliar a base de dados das propriedades da água, preferencialmente por meio da implementação de um banco de dados utilizando a biblioteca pandas, permitindo interpolação mais precisa. Além disso, pode-se incorporar outros tipos de geometrias de trocadores de calor, como casco e tubo, tornando o código mais completo e aplicável a diferentes configurações industriais.
 
-<img src="https://i.imgur.com/Fow81s1.jpeg">
+<img src="https://raw.githubusercontent.com/th-ogata/proj_extensao_UNIFESP_2s2025/refs/heads/main/imagens/resultado.jpg">
